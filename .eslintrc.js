@@ -14,6 +14,8 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'object-curly-spacing': ['warn', 'never'],
+    'max-len': ['warn', {'code': 300, 'tabWidth': 4}]
   },
   overrides: [
     {
