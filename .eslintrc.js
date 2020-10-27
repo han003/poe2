@@ -22,6 +22,8 @@ module.exports = {
     'quotes': ['error', 'single', {'allowTemplateLiterals': true}],
     'prefer-destructuring': 'warn',
     'prefer-template': 'warn',
+    'no-trailing-spaces': 'warn',
+    'no-multiple-empty-lines': 'warn',
   },
   overrides: [
     {

@@ -1,11 +1,15 @@
-export default class PoeApi {
-  private ok: boolean;
+import axios from 'axios';
 
-  constructor() {
-    this.ok = true;
+export default class PoeApi {
+  private readonly args: 'ApiRequest | BulkRequest';
+  private readonly url: 'string';
+
+  constructor(url: 'string', args: 'ApiRequest | BulkRequest') {
+    this.url = url;
+    this.args = args;
   }
 
-  get() {
-    return this;
+  post() {
+    return axios.post(this.url, this.args);
   }
 }

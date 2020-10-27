@@ -5,14 +5,14 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
-    path: '/',
-    name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue'),
+    path: '/chaos',
+    name: 'Chaos',
+    component: () => import(/* webpackChunkName: "chaos" */ '@/components/Chaos.vue'),
   },
   {
     path: '/settings',
     name: 'Settings',
-    component: () => import(/* webpackChunkName: "settings" */ '../components/Settings.vue'),
+    component: () => import(/* webpackChunkName: "settings" */ '@/components/Settings.vue'),
   },
 ];
 

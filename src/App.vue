@@ -12,9 +12,9 @@
 
         <md-list>
           <md-list-item>
-            <md-icon>home</md-icon>
+            <md-icon>attach_money</md-icon>
             <span class="md-list-item-text">
-              <router-link to="/home">Home</router-link>
+              <router-link to="/chaos">Chaos</router-link>
             </span>
           </md-list-item>
 
