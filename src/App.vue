@@ -12,8 +12,17 @@
 
         <md-list>
           <md-list-item>
+            <md-icon>home</md-icon>
+            <span class="md-list-item-text">
+              <router-link to="/home">Home</router-link>
+            </span>
+          </md-list-item>
+
+          <md-list-item>
             <md-icon>settings</md-icon>
-            <span class="md-list-item-text">Settings</span>
+            <span class="md-list-item-text">
+              <router-link to="/settings">Settings</router-link>
+            </span>
           </md-list-item>
         </md-list>
       </md-app-drawer>
