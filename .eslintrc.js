@@ -15,7 +15,13 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'object-curly-spacing': ['warn', 'never'],
-    'max-len': ['warn', {'code': 300, 'tabWidth': 4}]
+    'max-len': ['warn', {'code': 300, 'tabWidth': 4}],
+    'lines-between-class-members': ['warn', 'always', {'exceptAfterSingleLine': true}],
+    '@typescript-eslint/camelcase': ['error', {properties: 'never'}],
+    'prefer-const': 'warn',
+    'quotes': ['error', 'single', {'allowTemplateLiterals': true}],
+    'prefer-destructuring': 'warn',
+    'prefer-template': 'warn',
   },
   overrides: [
     {
