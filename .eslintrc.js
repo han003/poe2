@@ -23,7 +23,11 @@ module.exports = {
     'prefer-destructuring': 'warn',
     'prefer-template': 'warn',
     'no-trailing-spaces': 'warn',
+    'arrow-body-style': 'warn',
     'no-multiple-empty-lines': 'warn',
+    'no-await-in-loop': 'warn',
+    'no-underscore-dangle': 'warn',
+    'no-param-reassign': ['error', { 'props': false }],
   },
   overrides: [
     {

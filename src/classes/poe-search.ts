@@ -14,6 +14,13 @@ export default class PoeSearch {
         filters: {
           trade_filters: {
             disabled: args.tradeFiltersDisabled ?? false,
+            filters: {
+              price: {
+                min: args.minPrice,
+                max: args.maxPrice,
+                option: args.priceCurrency,
+              },
+            },
           },
           misc_filters: {
             filters: {
@@ -36,7 +43,7 @@ export default class PoeSearch {
         },
       },
       sort: {
-        [args.sortBy ?? 'price']: args.sortDirection ?? 'desc',
+        [args.sortBy ?? 'price']: args.sortDirection ?? 'asc',
       },
     };
   }
